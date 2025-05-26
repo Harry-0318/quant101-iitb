@@ -110,21 +110,7 @@
                       -70px 90px 0 rgba(0, 0, 0, 0);
         }
       }
-  @keyframes glow-up {
-    0%, 100% {
-      transform: translateY(-6px);
-      box-shadow: 0 4px 4px #84d2dd, inset 0 -2px 2px #6e737f;
-    }
-    50% {
-      transform: translateY(-8px);
-      box-shadow: 0 4px 12px #75e7f7, inset 0 -2px 2px #6e737f;
-    }
-  }
-
-  .animate-glow {
-    animation: glow-up 2s infinite ease-in-out;
-  }
-</style>
+      </style>
       
 
     <title>landing page</title>
@@ -268,47 +254,11 @@
                     </h2>
                   </div>
                   <div class="flex-wrap gap-3 flex justify-center">
-                    <!-- Include Tailwind CSS in your project -->
-
-<div class="flex justify-center items-center min-h-screen bg-gray-100">
-  <button class="relative w-[200px] h-[60px] cursor-pointer group focus:outline-none">
-
-    <!-- Back Layer -->
-    <div
-      class="absolute w-full h-full border-4 border-[#6e737f] rounded-[25px] bg-[#84d2dd] transition-all duration-300 shadow-[0_24px_24px_rgba(0,0,0,0.15),0_2px_0_rgba(0,0,0,0.4)] group-hover:bg-transparent group-hover:translate-y-1"
-    ></div>
-
-    <!-- Front Layer -->
-    <div
-      class="absolute w-[98%] h-full bg-gradient-to-b from-[#dcdfe0] to-[#bec4c8] rounded-[22px] transform -translate-y-[6px] flex items-center justify-center text-[#395d7a] text-[1rem] font-semibold tracking-[0.1rem] shadow-[0_4px_4px_#84d2dd,inset_0_-2px_2px_#6e737f] transition-all duration-100 overflow-hidden animate-glow group-hover:-translate-y-[8px] group-hover:shadow-[inset_0_-2px_2px_#6e737f] group-active:translate-y-0 group-active:shadow-[0_0_60px_#75e7f7,inset_0_-2px_2px_#6e737f]"
-    >
-      <p
-        class="absolute transition-all duration-300 group-hover:-translate-x-3"
-      >
-        GET STARTED
-      </p>
-      <svg
-        class="absolute left-full transition-all duration-300 group-hover:left-[80%]"
-        width="24px"
-        height="24px"
-        viewBox="0 0 16 16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g fill="#395d7a">
-          <path
-            d="M8 2.5a5.494 5.494 0 00-4.558 2.42.75.75 0 01-1.242-.84 7 7 0 110 7.841.75.75 0 111.242-.841A5.5 5.5 0 108 2.5z"
-          />
-          <path
-            d="M7.245 4.695a.75.75 0 00-.05 1.06l1.36 1.495H1.75a.75.75 0 000 1.5h6.805l-1.36 1.495a.75.75 0 001.11 1.01l2.5-2.75a.75.75 0 000-1.01l-2.5-2.75a.75.75 0 00-1.06-.05z"
-          />
-        </g>
-      </svg>
-    </div>
-  </button>
-</div>
-
-
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1989e5] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                    >
+                      <span class="truncate">Get Started</span>
+                    </button>
                     <button
                       class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#243747] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
                     >
