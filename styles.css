@@ -49,9 +49,5 @@
     text-shadow: -1px 1px 3px #2a0f3fbb;
     transition: all 0.3s ease;
   }
-  .svg {
-    margin-top: 2px;
-    font-weight: bold;
-    filter: drop-shadow(-2px 2px 1px #2a0f3f6c);
-  }
+
   
