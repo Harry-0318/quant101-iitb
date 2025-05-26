@@ -60,7 +60,7 @@
             </p>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">What We Do (Not Ready Yet)</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-1 gap-3 rounded-lg border border-[#3d4e5c] bg-[#1f272e] p-4 items-center">
+              <button id="learning" class="flex flex-1 gap-3 rounded-lg border border-[#3d4e5c] bg-[#1f272e] p-4 items-center" type="button">
                 <div class="text-white" data-icon="GraduationCap" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                     <path
@@ -69,7 +69,7 @@
                   </svg>
                 </div>
                 <h2 class="text-white text-base font-bold leading-tight">Learning</h2>
-              </div>
+              </button>
               <div class="flex flex-1 gap-3 rounded-lg border border-[#3d4e5c] bg-[#1f272e] p-4 items-center">
                 <div class="text-white" data-icon="Users" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
@@ -156,11 +156,122 @@
                   </div>
                 </a>
               </div>
+              <div id="learning-card" class="learning">
+                <div class="card__border"></div>
+                <div class="card_title__container">
+                  <span class="card_title">Learning</span>
+                  <p class="card_paragraph">Master the Fundamentals, Dominate the Future</p>
+                </div>
+                <hr class="line" />
+                <ul class="card__list">
+                  <li class="card__list_item">
+                    <span class="check">
+                      <svg
+                        class="check_svg"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="list_text">Core Quant Concepts</span>
+                  </li>
+                  <li class="card__list_item">
+                    <span class="check">
+                      <svg
+                        class="check_svg"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="list_text">Financial Mathematics</span>
+                  </li>
+                  <li class="card__list_item">
+                    <span class="check">
+                      <svg
+                        class="check_svg"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="list_text">Machine Learning Models</span>
+                  </li>
+                  <li class="card__list_item">
+                    <span class="check">
+                      <svg
+                        class="check_svg"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="list_text">Algo Trading Basics</span>
+                  </li>
+                  <li class="card__list_item">
+                    <span class="check">
+                      <svg
+                        class="check_svg"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="list_text">Curated Reading Lists</span>
+                  </li>
+                </ul>
+                <button class="button">→ Explore the Learning Path</button>
+                <button id="closeLearning" class="close-learning">&times;</button>
+              </div>
+              
               <p class="text-[#9dafbe] text-base font-normal leading-normal">© 2024 Quantify Club. All rights reserved.</p>
             </footer>
           </div>
         </footer>
       </div>
     </div>
+    <script>
+      const showBtn = document.getElementById('learning');
+      const closeBtn = document.getElementById('closeLearning');
+      const card = document.getElementById('learning-card');
+    
+      showBtn.addEventListener('click', () => {
+        card.style.display = 'block';
+      });
+    
+      closeBtn.addEventListener('click', () => {
+        card.style.display = 'none';
+      });
+    </script>
   </body>
 </html>
