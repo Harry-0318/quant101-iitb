@@ -159,14 +159,18 @@
         </div>
       </div>
     </div>
-    <script>
-      window.addEventListener('load', function () {
+    <!-- Fake delay to simulate loading -->
+  <script>
+    window.addEventListener('load', function () {
+      // Simulate a delay (e.g. 2 seconds)
+      setTimeout(() => {
         const loader = document.getElementById('loader-wrapper');
         if (loader) {
           loader.style.display = 'none';
         }
-      });
-    </script>
+      }, 2000); // 2000ms = 2 seconds
+    });
+  </script>
     
   </body>
 </html>
