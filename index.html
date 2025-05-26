@@ -199,7 +199,18 @@
               <div class="@[480px]:p-4">
                 <div
                   class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsrzix0IHdW_PAdB5SUbYyaO1ePEPpeQ0jogv5o9K7mJoaDQRBcjuFdul6slq4NYfL5Ut9Z9BIJmuq-KVuraxlv3xz1F9-hmCuEVSVHtaUMptSMWW-nxRH5vg2a-KjygHcGKY-zmQmcX098ncC06F7UJrn3Ydl7P-X3fIBOdrYwK-wkeTwihimdbqCCTHurDB1Xzy0lIIijt--opWxaXx1tieOWKshRiFEv39drxHn9xVpicLx7E0kTm-EBoIw5uUpYhmQ5epcyA");'
+                  style="
+  --w: 80px;
+  --bg: black;
+  --first: #222;
+  --second: #333;
+  background:
+    radial-gradient(circle at right, var(--first) 10% 35%, var(--second) 30% 36%, transparent 30%),
+    radial-gradient(circle at left, var(--first) 15% 35%, var(--second) 3% 45%, transparent 30%);
+  background-color: var(--bg);
+  background-size: var(--w) var(--w);
+"
+
                 >
                   <div class="flex flex-col gap-2 text-center">
                     <h1
