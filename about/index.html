@@ -7,8 +7,9 @@
       onload="this.rel='stylesheet'"
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
+    <link rel="stylesheet" href="styles.css" />
 
-    <title>Stitch Design</title>
+    <title>About Page</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -158,7 +159,7 @@
               </div>
               <div id="learning-card" class="learning">
                 <div class="card__border"></div>
-                <div class="card_title__container">
+                <div class="card_title__container" id="learning-drag-handle">
                   <span class="card_title">Learning</span>
                   <p class="card_paragraph">Master the Fundamentals, Dominate the Future</p>
                 </div>
@@ -254,24 +255,55 @@
                 <button id="closeLearning" class="close-learning">&times;</button>
               </div>
               
-              <p class="text-[#9dafbe] text-base font-normal leading-normal">© 2024 Quantify Club. All rights reserved.</p>
+              <p class="text-[#9dafbe] text-base font-normal leading-normal">Made By Harshit Singh Bhandari</p>
             </footer>
           </div>
         </footer>
       </div>
     </div>
     <script>
-      const showBtn = document.getElementById('learning');
-      const closeBtn = document.getElementById('closeLearning');
-      const card = document.getElementById('learning-card');
+      document.addEventListener('DOMContentLoaded', () => {
+        const showBtn = document.getElementById('learning');
+        const closeBtn = document.getElementById('closeLearning');
+        const card = document.getElementById('learning-card');
+        const dragHandle = document.getElementById('learning-drag-handle');
     
-      showBtn.addEventListener('click', () => {
-        card.style.display = 'block';
-      });
+        showBtn.addEventListener('click', () => {
+          card.style.display = 'block';
+        });
     
-      closeBtn.addEventListener('click', () => {
-        card.style.display = 'none';
+        closeBtn.addEventListener('click', () => {
+          card.style.display = 'none';
+        });
+    
+        // Make card draggable
+        let isDragging = false;
+        let offsetX, offsetY;
+    
+        dragHandle.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          const rect = card.getBoundingClientRect();
+          offsetX = e.clientX - rect.left;
+          offsetY = e.clientY - rect.top;
+    
+          // Prevent text selection while dragging
+          document.body.style.userSelect = 'none';
+        });
+    
+        document.addEventListener('mousemove', (e) => {
+          if (isDragging) {
+            card.style.left = `${e.clientX - offsetX}px`;
+            card.style.top = `${e.clientY - offsetY}px`;
+            card.style.transform = 'none'; // Disable centering once dragged
+          }
+        });
+    
+        document.addEventListener('mouseup', () => {
+          isDragging = false;
+          document.body.style.userSelect = 'auto';
+        });
       });
     </script>
+    
   </body>
 </html>
