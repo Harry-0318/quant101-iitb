@@ -27,8 +27,11 @@ Curated by IIT Bombay students for future quants who want a roadmap, clean summa
 4. Contribute. Fork the repo and drop your own insights.
 
 ## 🔧 Contributors
-- Harshit Singh Bhandari [`@yourGitHubUsername`](https://github.com/yourGitHubUsername)
+- Harshit Singh Bhandari [`Harshit Singh Bhandari`](https://github.com/Harry-0318)
 
 ## 📜 License
 
-MIT License — Use it, remix it, scale it. Just don’t gatekeep.
+Copyright © 2025 Harshit Singh Bhandari
+All rights reserved.
+
+This code may not be copied, modified, distributed, or used in any form without prior written permission from the author.
