@@ -29,9 +29,10 @@ Curated by IIT Bombay students for future quants who want a roadmap, clean summa
 ## 🔧 Contributors
 - Harshit Singh Bhandari [`Harshit Singh Bhandari`](https://github.com/Harry-0318)
 
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). Roadmap content, paper summaries, project ideas, and design improvements are all welcome.
+
 ## 📜 License
 
-Copyright © 2025 Harshit Singh Bhandari
-All rights reserved.
-
-This code may not be copied, modified, distributed, or used in any form without prior written permission from the author.
+Released under the [MIT License](LICENSE). © 2025 Harshit Singh Bhandari and contributors.
